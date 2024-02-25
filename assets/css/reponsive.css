@@ -3,6 +3,11 @@
 
 /* Tablet and moblie */
 @media screen and (max-width: 991.98px) {
+    .header__container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
     .header__inner {
         padding-bottom: 20px;
         border-bottom: 1px solid #d6d3e2;
@@ -30,6 +35,7 @@
     }
     .navbar {
         position: absolute;
+        z-index: 999;
         inset: 0 0 0 50%;
         background-color: #fff;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
@@ -57,8 +63,69 @@
     .header-menu {
         display: block;
         position: relative;
-        z-index: 2;
+        z-index: 999;
         order: 3;
+    }
+
+    /* hero */
+    .hero__media {
+        order: 2;
+    }
+
+    .hero__content {
+        position: relative;
+        z-index: 3;
+        margin-left: 0;
+        order: 1;
+    }
+
+    .hero__heading {
+        max-width: 260px;
+        font-size: 4.2rem;
+        line-height: 1.19;
+        letter-spacing: -1.68px;
+    }
+
+    .hero__desc {
+        max-width: 318px;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.62;
+    }
+
+    .hero__more {
+        gap: 0 40px;
+    }
+
+    .btn {
+        width: 147px;
+        height: 55px;
+    }
+
+    .btn,
+    .hero__more-work {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.87;
+        text-decoration-line: underline;
+    }
+
+    .hero__follow {
+        margin-top: 25px;
+    }
+
+    .hero__media {
+        margin: 20px auto 0;
+    }
+
+    .hero__media-wrap {
+        width: 259px;
+        height: 355px;
+    }
+
+    .hero__media-decor {
+        left: -15px;
     }
 }
 
