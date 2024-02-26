@@ -32,6 +32,7 @@ select {
     --black-color: #080415;
     --desc-color: #51586a;
     --primary-color: #5d3bee;
+    --white-color: #fff;
 }
 
 /* common */
@@ -129,7 +130,7 @@ select {
 
 /* hero */
 .hero {
-    padding: 44px 0 100px;
+    padding-top: 44px;
     background: #fbfaff;
 }
 
@@ -232,4 +233,45 @@ select {
 
 .hero__cicrle:hover {
     border-color: var(--black-color);
+}
+
+/* social */
+.social {
+    margin: 100px 0;
+    background-color: var(--white-color);
+}
+.social__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social__heading {
+    max-width: 252px;
+    color: var(--black-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: -1.68px;
+}
+
+.social__title {
+    display: flex;
+}
+
+.social__title::before {
+    display: inline-block;
+    margin-top: 22px;
+    margin-right: 13px;
+    content: "";
+    width: 86px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+}
+
+.social__info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+    max-width: 713px;
 }
