@@ -89,6 +89,8 @@
 .row[class*="row-cols-"] > *,
 .row > [class*="col-"] {
     flex: 0 0 auto;
+    padding-top: calc(var(--spacer) / 2);
+    padding-bottom: calc(var(--spacer) / 2);
 }
 
 .row[class*="row-cols-"] > * {

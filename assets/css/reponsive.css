@@ -5,8 +5,16 @@
 @media screen and (max-width: 991.98px) {
     /* common */
     .section-heading {
+        text-align: center;
         font-size: 3.6rem;
         letter-spacing: -1.44px;
+    }
+
+    .section-desc {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.62;
     }
     /* endcommon */
     .header__container {
@@ -114,6 +122,9 @@
         font-size: 1.6rem;
         font-weight: 700;
         line-height: 1.87;
+    }
+
+    .hero__more-work {
         text-decoration-line: underline;
     }
 
@@ -217,13 +228,102 @@
     /* special */
     .special-desc {
         max-width: 350px;
-        font-size: 1.6rem;
-        line-height: 1.62;
     }
 
     .special__list {
         flex-wrap: nowrap;
         overflow: hidden;
+    }
+
+    .special__dots {
+        display: flex;
+    }
+
+    /* project */
+    .project {
+        margin-top: 87px;
+        padding: 70px 0 60px;
+    }
+    .project__info {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .project__heading {
+        max-width: 301px;
+    }
+
+    .project__list {
+        margin-top: 60px;
+    }
+
+    .project-item {
+        padding: 20px 15px;
+    }
+    .project-item__heading {
+        font-size: 2.4rem;
+        line-height: 1.41;
+        letter-spacing: -0.96px;
+    }
+
+    .project-item__desc {
+        margin-top: 4px;
+        max-width: 176px;
+        font-size: 1.4rem;
+        line-height: 1.42;
+    }
+
+    .project-item__more {
+        margin-top: 4px;
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
+
+    .project__thumb {
+        width: 122px;
+        height: 93px;
+    }
+    .project__btn {
+        margin-top: 35px;
+    }
+    .project-btn {
+        width: 154px;
+        height: 56px;
+    }
+
+    /* interactive */
+    .interact {
+        margin-top: 100px;
+        padding: 20px 0;
+    }
+
+    .interact__title {
+        font-size: 2rem;
+        line-height: 2;
+        letter-spacing: -0.8px;
+    }
+
+    .interact__rating {
+        width: 100%;
+        margin-top: 50px;
+        padding: 30px 16px 20px;
+    }
+
+    .interact-item + .interact-item {
+        padding-left: 48px;
+    }
+
+    .interact-item__value {
+        font-size: 3rem;
+        line-height: 1.4;
+        letter-spacing: 0.9px;
+    }
+
+    .interact-item__desc {
+        margin-top: 5px;
+        white-space: wrap;
+        font-size: 1.6rem;
+        line-height: 1.37;
     }
 }
 
