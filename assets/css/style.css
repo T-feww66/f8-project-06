@@ -342,9 +342,6 @@ select {
     gap: 0 15px;
 }
 
-
-
-
 .special__dot {
     display: inline-block;
     width: 16px;
@@ -502,4 +499,21 @@ select {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66;
+}
+
+.interact__media {
+    position: relative;
+}
+
+.interact__video {
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.interact__more {
+    color: var(--desc-color);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }

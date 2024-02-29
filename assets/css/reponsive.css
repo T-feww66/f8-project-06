@@ -325,6 +325,15 @@
         font-size: 1.6rem;
         line-height: 1.37;
     }
+
+    .interact__more {
+        width: 118px;
+        height: 44px;
+        color: #51586a;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2.5;
+    }
 }
 
 /* Tablet */
