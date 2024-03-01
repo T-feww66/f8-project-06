@@ -23,3 +23,31 @@ overlay.onclick = () => {
     navBar.classList.remove("active");
     overlay.classList.remove("active");
 };
+
+// slider
+
+// slider
+var feedbackList = document.querySelector(".feedback__list");
+var feedbackItem = document.querySelectorAll(".feedback-item");
+var dot = document.querySelectorAll(".feedback__dots .dot");
+
+var active = 0;
+var lenght = feedbackItem.length - 1;
+
+function reloadSlider() {
+    if (active + 1 > lenght) {
+        active = 0;
+    } else {
+        active++;
+    }
+    let checkLeft = feedbackItem[active].offsetWidth;
+    feedbackList.style.transform = `translateX(${-checkLeft * active}px)`;
+    document
+        .querySelector(".feedback__dots .dot.active")
+        .classList.remove("active");
+    dot[active].classList.add("active");
+}
+
+setInterval(() => {
+    reloadSlider();
+}, 2000);
