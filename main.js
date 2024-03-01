@@ -34,20 +34,32 @@ var dot = document.querySelectorAll(".feedback__dots .dot");
 var active = 0;
 var lenght = feedbackItem.length - 1;
 
+let setRefresh = setInterval(() => {
+    reloadSlider();
+}, 2000);
+
 function reloadSlider() {
     if (active + 1 > lenght) {
         active = 0;
     } else {
-        active++;
+        active = active + 1;
     }
     let checkLeft = feedbackItem[active].offsetWidth;
     feedbackList.style.transform = `translateX(${-checkLeft * active}px)`;
+
     document
         .querySelector(".feedback__dots .dot.active")
         .classList.remove("active");
     dot[active].classList.add("active");
+    clearInterval(setRefresh);
+    setRefresh = setInterval(() => {
+        reloadSlider();
+    }, 2000);
 }
 
-setInterval(() => {
-    reloadSlider();
-}, 2000);
+dot.forEach((li, key) => {
+    li.addEventListener("click", () => {
+        active = key - 1;
+        reloadSlider();
+    });
+});

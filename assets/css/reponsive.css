@@ -358,6 +358,33 @@
         font-size: 2.4rem;
         line-height: 1.66;
     }
+
+    /* question */
+    .question {
+        margin-top: 70px;
+        padding: 50px 0;
+    }
+
+    .question__heading {
+        max-width: 316px;
+        text-align: left;
+    }
+
+    .question__list {
+        margin-top: 42px;
+    }
+
+    .question-item__heading {
+        max-width: 264px;
+        font-size: 2.4rem;
+        line-height: 1.25;
+        letter-spacing: -0.96px;
+    }
+
+    .question-item__desc {
+        text-align: left;
+        max-width: 316px;
+    }
 }
 
 /* Tablet */
