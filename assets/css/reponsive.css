@@ -16,6 +16,11 @@
         font-size: 1.6rem;
         line-height: 1.62;
     }
+
+    .dots {
+        display: flex;
+        margin-top: 42px;
+    }
     /* endcommon */
     .header__container {
         max-width: 100%;
@@ -373,6 +378,9 @@
     .question__list {
         margin-top: 42px;
     }
+    .question-item + .question-item {
+        margin-top: 40px;
+    }
 
     .question-item__heading {
         max-width: 264px;
@@ -384,6 +392,46 @@
     .question-item__desc {
         text-align: left;
         max-width: 316px;
+    }
+    /* atmosphere */
+    .atmosphere {
+        margin-top: 20px;
+    }
+
+    .atmosphere__title {
+        font-size: 2rem;
+        line-height: 2;
+        letter-spacing: -0.8px;
+    }
+
+    .atmosphere__media {
+        margin-top: 60px;
+        flex-wrap: nowrap;
+    }
+
+    .atmosphere__media-wrap {
+        overflow: hidden;
+    }
+    .atmosphere__img {
+        height: 503px;
+    }
+
+    /* cta */
+    .cta {
+        padding: 36px 0;
+        margin-top: 70px;
+    }
+
+    .cta__heading {
+        margin-top: 10px;
+    }
+
+    .cta__desc {
+        margin-top: 10px;
+    }
+
+    .cta__btn {
+        margin-top: 30px;
     }
 }
 

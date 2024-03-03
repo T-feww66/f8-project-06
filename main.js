@@ -63,3 +63,12 @@ dot.forEach((li, key) => {
         reloadSlider();
     });
 });
+
+var toggleCircle = document.querySelectorAll(".question__circle");
+
+toggleCircle.forEach((item) => {
+    item.addEventListener("click", () => {
+        var parentToggle = item.parentElement;
+        parentToggle.classList.toggle("active");
+    });
+});
